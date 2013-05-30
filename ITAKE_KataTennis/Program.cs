@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ITAKE_KataTennis
+﻿namespace ITAKE_KataTennis
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            TennisGame game = new TennisGame();
+
+            while (game.IsOngoing())
+            {
+                game.PlayBall();
+            }
         }
     }
 }
